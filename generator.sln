@@ -1,9 +1,25 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+VisualStudioVersion = 15.0.27004.2010
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api", "api\api.csproj", "{395194DA-84B9-4E9B-BA03-F4D091155E37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "api", "api\api.csproj", "{395194DA-84B9-4E9B-BA03-F4D091155E37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tests", "tests\tests.csproj", "{97F9E51A-F316-4064-BACA-2F479A1F041E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{04CDD61B-3432-498C-86A7-D70B141156BE}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile.txt = Dockerfile.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "registry", "registry", "{7768CF8C-A55C-40BF-B9FF-384A608054FD}"
+	ProjectSection(SolutionItems) = preProject
+		infra\registry\docker-compose.yml = infra\registry\docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "teamcity", "teamcity", "{8E0CF835-CCEA-4E21-B571-196DE5CC7023}"
+	ProjectSection(SolutionItems) = preProject
+		infra\teamcity\docker-compose.yml = infra\teamcity\docker-compose.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,21 +30,40 @@ Global
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{395194DA-84B9-4E9B-BA03-F4D091155E37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{395194DA-84B9-4E9B-BA03-F4D091155E37}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{395194DA-84B9-4E9B-BA03-F4D091155E37}.Debug|x64.ActiveCfg = Debug|x64
-		{395194DA-84B9-4E9B-BA03-F4D091155E37}.Debug|x64.Build.0 = Debug|x64
-		{395194DA-84B9-4E9B-BA03-F4D091155E37}.Debug|x86.ActiveCfg = Debug|x86
-		{395194DA-84B9-4E9B-BA03-F4D091155E37}.Debug|x86.Build.0 = Debug|x86
+		{395194DA-84B9-4E9B-BA03-F4D091155E37}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{395194DA-84B9-4E9B-BA03-F4D091155E37}.Debug|x64.Build.0 = Debug|Any CPU
+		{395194DA-84B9-4E9B-BA03-F4D091155E37}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{395194DA-84B9-4E9B-BA03-F4D091155E37}.Debug|x86.Build.0 = Debug|Any CPU
 		{395194DA-84B9-4E9B-BA03-F4D091155E37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{395194DA-84B9-4E9B-BA03-F4D091155E37}.Release|Any CPU.Build.0 = Release|Any CPU
-		{395194DA-84B9-4E9B-BA03-F4D091155E37}.Release|x64.ActiveCfg = Release|x64
-		{395194DA-84B9-4E9B-BA03-F4D091155E37}.Release|x64.Build.0 = Release|x64
-		{395194DA-84B9-4E9B-BA03-F4D091155E37}.Release|x86.ActiveCfg = Release|x86
-		{395194DA-84B9-4E9B-BA03-F4D091155E37}.Release|x86.Build.0 = Release|x86
+		{395194DA-84B9-4E9B-BA03-F4D091155E37}.Release|x64.ActiveCfg = Release|Any CPU
+		{395194DA-84B9-4E9B-BA03-F4D091155E37}.Release|x64.Build.0 = Release|Any CPU
+		{395194DA-84B9-4E9B-BA03-F4D091155E37}.Release|x86.ActiveCfg = Release|Any CPU
+		{395194DA-84B9-4E9B-BA03-F4D091155E37}.Release|x86.Build.0 = Release|Any CPU
+		{97F9E51A-F316-4064-BACA-2F479A1F041E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97F9E51A-F316-4064-BACA-2F479A1F041E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97F9E51A-F316-4064-BACA-2F479A1F041E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{97F9E51A-F316-4064-BACA-2F479A1F041E}.Debug|x64.Build.0 = Debug|Any CPU
+		{97F9E51A-F316-4064-BACA-2F479A1F041E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{97F9E51A-F316-4064-BACA-2F479A1F041E}.Debug|x86.Build.0 = Debug|Any CPU
+		{97F9E51A-F316-4064-BACA-2F479A1F041E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97F9E51A-F316-4064-BACA-2F479A1F041E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97F9E51A-F316-4064-BACA-2F479A1F041E}.Release|x64.ActiveCfg = Release|Any CPU
+		{97F9E51A-F316-4064-BACA-2F479A1F041E}.Release|x64.Build.0 = Release|Any CPU
+		{97F9E51A-F316-4064-BACA-2F479A1F041E}.Release|x86.ActiveCfg = Release|Any CPU
+		{97F9E51A-F316-4064-BACA-2F479A1F041E}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7768CF8C-A55C-40BF-B9FF-384A608054FD} = {04CDD61B-3432-498C-86A7-D70B141156BE}
+		{8E0CF835-CCEA-4E21-B571-196DE5CC7023} = {04CDD61B-3432-498C-86A7-D70B141156BE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {208F72E9-A974-49B8-A335-61AB80A37060}
 	EndGlobalSection
 EndGlobal
