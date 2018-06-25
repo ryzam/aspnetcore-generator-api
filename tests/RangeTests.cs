@@ -22,7 +22,7 @@ namespace tests
         {
             int num = 0;
 
-            Assert.Equal(0, num);
+            Assert.Equal(1, num);
         }
     }
 }
