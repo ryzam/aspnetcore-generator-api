@@ -16,5 +16,13 @@ namespace tests
 
             Assert.Equal(3, generated.Count());
         }
+
+        [Fact]
+        public void TestBuild()
+        {
+            int num = 0;
+
+            Assert.Equal(0, num);
+        }
     }
 }
